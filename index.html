@@ -4,9 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,200&family=Lobster&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Hey! Portfolio Building has Started.</h1>
+
+    <!-- total navbar from scratch. -->
+    <div id="navbar">
+        <div id="logo">
+           
+            <div class="logo-name">
+                <p><span>B</span>inod</p>
+            </div>
+        </div>
+
+        
+
+        <div id="menu-list">
+            <ul>
+                <li><a href="#main-section"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a>SKILLS</a></li>
+                <li><a>PROJECTS</a></li>
+                <li><a>CONTACT</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- //Downlodable RESUME button. -->
+        <div id="nav-button">
+            
+            <button id="primary-btn" class="resume_btn1">RESUME <i class="fa-solid fa-download"></i></button>
+            <button id="primary-btn"><i class="fa-solid fa-user"></i> Admin Workspace</button>
+        </div>
+
+
+        <!-- // Theme changing toogle button. -->
+        <div id="change-theme">
+            <p class="theme-logo"><i class="fa-solid fa-moon"></i> </p>
+        </div>
+    </div>
+
+
+
+    <!-- Home banner Section ....... -->
+
+    <div id="main-section">
+
+        <!-- left section of main banner -->
+        <div id="main-left">
+            <div class="salute-sec">
+                <p>Hello <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> </p>
+            </div>
+
+            <div class="name-sec">
+                <p>My name is <span >D Binod</span> </p>
+            </div>
+
+            <div id="subtitle-sec">
+                <p>I am a <span class="auto-type"></span></p>
+            </div>
+
+            <div id="social-icon-1">
+                <div class="linked-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="github-icon"><i class="fa-brands fa-github"></i></div>
+
+                <div class="mail-icon"><i class="fa-solid fa-envelope"></i></div>
+            </div>
+
+            <div class="resume-btn-1">
+                <button id="primary-btn" class="resume-btn2">Resume <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+
+        <!-- Right section of main banner -->
+
+        <div id="main-right">
+            <div id="banner-img">
+                <img src="img/main-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--About Me setion-->
+
+    <div id="About">
+        <div >
+            <h2 class="primary-heading">About <span class="primary-heading-span">Me</span> </h2>
+        </div>
+
+        <div class="content-section">
+            <div class="about-img">
+                <img src="img/about-img.svg" alt="">
+            </div>
+
+            <div class="about-content">
+                <p><i class="fa-solid fa-gear"></i>  &nbsp;  Hello, My name is D Binod and I enjoy creating things that fulfiled with Logic.</p>
+
+                <p><i class="fa-solid fa-gear"></i> &nbsp; A passionate Backend developer with core knowledge of <b>JAVA, SPRING-BOOT, MySQL </b>. Works efficiently both in frontend as well as backend and is proficient in Data Structure and Algorithms with good problem solving skills.</p>
+
+                <p><i class="fa-solid fa-gear"></i>  &nbsp; Dedicate to developing robust applications that interact with the Backend part of web applications.</p>
+
+                <P><i class="fa-solid fa-gear"></i>  &nbsp; I built 2 major projects and 10+ mini projects. Learned a great deal about teamwork, leadership, and communication. After 8 months of rigorous training, here I am looking for an opportunity as a <b>Java Backend Developer</b>.</P>
+
+                <button id="primary-btn" class="resume-btn3">Resume <i class="fa-solid fa-download"></i></button>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Project Section... -->
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+    var typed =new Typed(".auto-type",{
+        strings:["Web Developer","Java Backend Developer"],
+        typeSpeed:150,
+        backSpeed:30,
+        loop:true
+    })
+</script>
+
+<script src="js/index.js"></script>

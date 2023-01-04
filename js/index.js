@@ -20,15 +20,16 @@ change_theme_btn.onclick=function(){
 
 // given link to Every buttom .
 
-document.querySelector(".resume_btn1").addEventListener("click", open_resume());
 
-function open_resume(){
-    window.open("https://drive.google.com/file/d/1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F/view?usp=sharing","_blank");
-};
-
+document.querySelector(".resume-btn1").addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F/view?usp=share_link","_blank");
+    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
+});
 document.querySelector(".resume-btn2").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
+    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
 });
 document.querySelector(".resume-btn3").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
+    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
 });

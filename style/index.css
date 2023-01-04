@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* Here is root of Every Color */
 
@@ -17,7 +20,7 @@
 }
 
 .dark-mode{
-    --primary-color:#0b0b0b;
+    --primary-color:#181818;
     --secondary-color:#146ebe;
     --black-color:ghostwhite ;
     --fade-black-color:#ffffff;
@@ -28,17 +31,20 @@
 
 body{
     background-color: var(--primary-color);
+  
+    
 }
 #navbar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    
     align-items: center;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    /* top: 0px; */
     box-shadow: 1px 1px rgb(236, 235, 235);
     background-color:var(--ghost-white);
+    z-index: 100;
 }
 
 #navbar>#logo{
@@ -121,22 +127,35 @@ body{
 }
 
 
+
+
+
+
+
+/* Main ssection degined................... */
 #main-section{
     display: flex;
     /* margin: auto; */
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
+    /* position:sticky; */
+    top: 0px;
     width: 100%;
     height: 100vh;
     /* font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif; */
     font-family: Times New Roman,Times,serif;
     color: var(--black-color);
+    z-index: -10;
+
+   
+    
 }
 #main-section>#main-left{
     width: 40%;
-    font-size: 45px;
+    font-size: 35px;
     /* margin: auto; */
     margin: 100px auto;
+    font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
 }
 
 
@@ -153,7 +172,7 @@ body{
 
 #main-section>#main-left>#subtitle-sec{
     font-size: 30px;
-    margin: 10px auto;
+    margin: 5px auto;
   
     font-family: Times New Roman,Times,serif;
 }
@@ -204,12 +223,13 @@ body{
 }
 
 #main-section>#main-right img{
-    width:30vw;
-    margin: 10px;
+    width:35vw;
+    margin-top: 40px;
     transition: 2s;
+   
 }
 #main-section>#main-right img:hover{
-    width: 35vw;
+    width: 40vw;
     margin-right: 10px;
 }
 
@@ -221,7 +241,8 @@ body{
 #About{
     background-color:var(--ghost-white);
     color: var(--black-color);
-    padding: 40px ;
+    padding: 50px ;
+    box-shadow: 1px -5px 10px var(--gray-color);
 }
 
 .primary-heading{
@@ -258,12 +279,14 @@ body{
     font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
     text-align: left;
     font-size: 18px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     line-height: 30px;
     color: var(--fade-black-color);
 }
 
 
+
+/* icon rotating animation. */
 #About>.content-section>.about-content p i{
     color: var(--secondary-color);
     font-size: 25px;
@@ -278,3 +301,166 @@ body{
     /* 100%{transform: rotateZ(0deg);} */
 }
 
+
+
+
+/* Project management section strarted designing..... */
+#project{
+    width: 80%;
+    margin:30px auto;
+    color: var(--black-color);
+    font-family:ubuntu, cera-round-pro,Helvetica;
+}
+
+#project>#project-items{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 30px;
+    margin: 60px auto;
+}
+
+#project>#project-items>.prj-box{
+    margin: 10px;
+    background-color:var(--ghost-white);
+    padding: 20px;
+    border: 1px solid var(--black-color);
+    box-shadow: -15px -10px 0px  var(--fade-black-color);
+    transition: 0.5s;
+}
+
+#project>#project-items>.prj-box:hover{
+    /* width: 100%; */
+    box-shadow: 1px 1px  20px var(--fade-black-color);
+}
+
+
+/* Project image designning.... */
+#project>#project-items>.prj-box>.prj-img img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px -2px 5px 3px var(--gray-color);
+    /* border: 1px solid var(--secondary-color); */
+}
+
+
+/* Project title designing ...... */
+#project>#project-items>.prj-box .prj-title{
+    font-size: 25px; 
+   margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+
+#project>#project-items>.prj-box .prj-title a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 0px var(--gray-color);
+}
+
+#project>#project-items>.prj-box .prj-title a:hover{
+    color: var(--black-color);
+}
+
+
+
+/* Project Description designing..... */
+#project>#project-items>.prj-box .prj-decription p{
+    text-align: left;
+    font-size: 15px;
+    color: var(--fade-black-color);
+    line-height: 20px;
+}
+
+
+/* Project Tech stack aliignment..... */
+#project>#project-items>.prj-box .prj-techstack{
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:10px auto;
+    color: var(--secondary-color);
+    text-align: center;
+    
+}
+
+#project>#project-items>.prj-box .prj-techstack img{
+    width: 7%;
+    margin: 5px;
+    align-items: center;
+   
+}
+
+
+/* Project External details section.... */
+#project>#project-items>.prj-box>.prj-type{
+    color: var(--secondary-color);
+    font-size: 15px;
+    margin: 7px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#project>#project-items>.prj-box>.prj-type span{
+    color: var(--black-color);
+}
+
+
+
+/* Set hiperLink to correspoding project...  */
+#project>#project-items>.prj-box>.prj-links{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--black-color);
+}
+
+#project>#project-items>.prj-box>.prj-links a{
+    color: var(--black-color);
+}
+
+
+
+
+
+/* Technical skills section designig... */
+
+#tech-skill{
+    background-color:var(--ghost-white);
+    color: var(--black-color);
+    margin: auto;
+    padding: 30px;
+
+}
+
+#tech-skill>#techskill-content{
+    width: 80%;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    -ms-grid-column-align: center;
+    gap:3rem;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+}
+
+#tech-skill>#techskill-content .skill-box{
+    background-color:var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    font-family:ubuntu, cera-round-pro,Helvetica;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 3px var(--gray-color);
+    font-size: 18px;
+}
+
+#tech-skill>#techskill-content .skill-box img{
+    width: 100%;
+    margin: 10px auto;
+}

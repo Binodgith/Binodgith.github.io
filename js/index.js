@@ -23,13 +23,13 @@ change_theme_btn.onclick=function(){
 
 document.querySelector(".resume-btn1").addEventListener("click",function(){
     window.open("https://drive.google.com/file/d/1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F/view?usp=share_link","_blank");
-    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
+    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
 });
 document.querySelector(".resume-btn2").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
-    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
+    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
 });
 document.querySelector(".resume-btn3").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
-    window.open("https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F","_blank");
+    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
 });

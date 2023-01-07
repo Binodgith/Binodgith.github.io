@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
 
 /* Here is root of Every Color */
 
@@ -26,6 +24,25 @@ html{
     --fade-black-color:#ffffff;
     --gray-color:rgb(209, 209, 209);
     --ghost-white:black;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    /* background-color: blue; */
+    /* color: #146ebe; */
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: 15px;
 }
 
 
@@ -223,13 +240,13 @@ body{
 }
 
 #main-section>#main-right img{
-    width:35vw;
+    width:30vw;
     margin-top: 40px;
-    transition: 2s;
+    transition: 1s;
    
 }
 #main-section>#main-right img:hover{
-    width: 40vw;
+    width: 37vw;
     margin-right: 10px;
 }
 
@@ -325,12 +342,16 @@ body{
     padding: 20px;
     border: 1px solid var(--black-color);
     box-shadow: -15px -10px 0px  var(--fade-black-color);
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 #project>#project-items>.prj-box:hover{
     /* width: 100%; */
-    box-shadow: 1px 1px  20px var(--fade-black-color);
+    /* box-shadow: 1px 1px 10px 1px var(--fade-black-color); */
+    box-shadow: -5px 15px 0px  var(--fade-black-color);
+    transform: rotateX(30deg);
+    /* transform: rotateY(0deg); */
+
 }
 
 
@@ -458,9 +479,33 @@ body{
     font-weight: bold;
     box-shadow: 0px 0px 15px 3px var(--gray-color);
     font-size: 18px;
+    transition: 1s;
+}
+
+
+#tech-skill>#techskill-content .skill-box:hover{
+    transform: rotateZ(360deg);
+    box-shadow: 0px 0px 15px 5px var(--secondary-color);
+
 }
 
 #tech-skill>#techskill-content .skill-box img{
     width: 100%;
     margin: 10px auto;
+}
+
+
+
+
+
+/* Profile banner designing........ */
+
+#profile-banner{
+    width: 60%;
+    margin:30px auto;
+}
+
+#profile-banner img{
+    width: 100%;
+    border-radius: 20px;
 }

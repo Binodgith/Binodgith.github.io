@@ -110,3 +110,32 @@ let date=new Date();
 let year=date.getFullYear();
 document.getElementById("footer-year").innerText=year;
 
+
+
+
+
+// alert pop up animation are followed......
+
+
+function popup_alert(texts,bc){
+    let id=setInterval(animation_fun,1000);
+    let second=0;
+    function animation_fun(){
+        if(second==4){
+            clearInterval(id);
+            document.getElementById("alert-text").innerText="";
+            document.getElementById("alert-section").style.visibility="hidden";
+            document.getElementById("alert-section").style.top="-10%"
+            
+        }else{
+            document.getElementById("alert-text").innerText=texts;
+            document.getElementById("alert-section").style.backgroundColor=bc;
+
+            document.getElementById("alert-section").style.visibility="visible";
+            document.getElementById("alert-section").style.top="10%";
+            second++;
+        }
+
+    }
+}
+

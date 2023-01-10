@@ -1,3 +1,12 @@
+// Pre-Loader allignment..........
+let pre_loader=document.getElementById("intro_animation");
+
+function loadfun(){
+    pre_loader.style.display= 'none';
+}
+
+
+
 
 // Dark Mode functionality with toggle button.
 
@@ -44,6 +53,29 @@ change_theme_btn.onclick=function(){
 
 
 
+// Designng Navbar Menu button for mobile view.
+document.querySelector("#menu-list-icon").addEventListener("click",function(){
+    let menu_btn=document.querySelector("#menu-list-icon");
+    menu_btn.addEventListener("click",function(){
+    document.querySelector("#navbar>#menu-list>ul").style.right="40%";
+    document.querySelector("#navbar>#menu-list>ul").style.visibility="visible";
+    document.querySelector("#navbar #menu-close-icon i").style.visibility="visible";
+   })
+    
+})
+
+document.querySelector("#navbar #menu-close-icon i").addEventListener("click",function(){
+    document.querySelector("#navbar>#menu-list>ul").style.right="100%";
+    document.querySelector("#navbar>#menu-list>ul").style.visibility="hidden";
+    document.querySelector("#navbar #menu-close-icon i").style.visibility="hidden";
+})
+
+
+
+
+
+
+
 
 
 // given link to Every buttom .
@@ -76,6 +108,11 @@ document.querySelector("#social-icon-1>.github-icon").addEventListener("click",f
 document.querySelector("#social-icon-1>.mail-icon").addEventListener("click",function(){
     window.open("https://mail.google.com/mail/u/0/?fs=1&to=dbinod2020@gmail.com&su=Hey+I+want+to+connect+with+you&tf=cm","_blank");
 
+})
+
+// Link assigning to logo icon.
+document.getElementById("logo").addEventListener("click",function(){
+    location.href="../index.html";
 })
 
 

@@ -52,14 +52,47 @@ body{
   
     
 }
-#navbar{
+
+/* Intro animation........................ */
+
+#intro_animation{
+    height: 100vh;
     width: 100%;
+    /* margin: auto; */
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+}
+
+#intro_animation div{
+    font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+    font-size: larger;
+    width: 20%;
+    margin:20vh auto;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+
+}
+
+#intro_animation div img{
+    width: 100%;
+}
+
+
+
+
+
+#navbar{
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     padding: 5px;
     align-items: center;
-    position: fixed;
-    /* top: 0px; */
+    position: sticky;
+    top: 0px;
     box-shadow: 1px 1px rgb(236, 235, 235);
     background-color:var(--ghost-white);
     z-index: 100;
@@ -144,6 +177,11 @@ body{
     
 }
 
+#menu-list-icon{
+    visibility: hidden;
+    
+}
+
 
 
 
@@ -153,13 +191,13 @@ body{
 /* Main ssection degined................... */
 #main-section{
     display: flex;
-    /* margin: auto; */
+    margin: auto;
     justify-content: space-between;
     align-items: center;
     /* position:sticky; */
     top: 0px;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif; */
     font-family: Times New Roman,Times,serif;
     color: var(--black-color);
@@ -725,7 +763,7 @@ body{
 }
 
 #contact #contact-right #contact-form .upload-area select{
-    width: 10vw;
+    width: 20vw;
     font-size: 18px;
     border: 1px solid var(--secondary-color);
 }
@@ -847,6 +885,6 @@ body{
     transform: translateX(-50%);
     z-index: 200;
     box-shadow: 0px 0px 5px var(--fade-black-color);
-    transition: 0.5s;
+    transition: 0.2s;
     visibility: hidden;
 }

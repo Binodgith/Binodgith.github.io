@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
-
+    <link rel="stylesheet" href="style/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,200&family=Lobster&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body id="body" onload="loadfun()">
+
+    <div id="intro_animation">
+        <div>
+            <img src="img/logo gif.gif" alt="">
+            <h2>Welcome To Binod's Portfolio.....</h2>
+        </div>
+
+    </div>
 
     <!-- total navbar from scratch. -->
     <div id="navbar">
@@ -46,6 +54,15 @@
         <div id="change-theme">
             <p class="theme-logo"><i class="fa-solid fa-moon"></i> </p>
         </div>
+
+        <div id="menu-list-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu-close-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+
     </div>
 
 
@@ -384,7 +401,7 @@
                 
     
                 <div id="contact-form" >
-                    <form action="" name="contact-form1" id="contact-form1">
+                    <div  id="contact-form1">
                         <input type="tel" name="name" id="name-div" placeholder="Enter Name" required>
     
                         <input type="email" name="email" id="email-div" placeholder="Enter Email" required>
@@ -407,12 +424,12 @@
                         </div>
 
                         <div class="contact-form-btn">
-                            <button id="form-submit-btn" type="submit"  form="contact-form1">Submit</button>
+                            <button id="form-submit-btn" >Submit</button>
     
                             <button id="form-reset-btn" type="reset" form="contact-form1">Reset</button>
                         </div>
     
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

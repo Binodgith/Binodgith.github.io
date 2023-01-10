@@ -15,9 +15,22 @@ let E_api = "https://script.google.com/macros/s/AKfycbyis59RkA2eycKoCZKuzanTLiGz
 
 
 
+
+// Reset button worling or not..................
+document.getElementById("form-reset-btn").addEventListener("click",reset_function());
+function reset_function(){
+    let name = document.querySelector("#name-div").value="";
+    let email = document.querySelector("#email-div").value="";
+    let mobile = document.querySelector("#mobile-div").value="";
+    let message = document.querySelector("#message-div").value="";
+}
+
+
+
+
 // Creating object of a contact form
-document.querySelector("#contact-form1").addEventListener("submit", function (event) {
-    // event.preventDefault();
+document.querySelector("#form-submit-btn").addEventListener("click", function (event) {
+    event.preventDefault();
     document.getElementById("form-submit-btn").innerText = "Submitting......";
     document.getElementById("form-submit-btn").style.backgroundColor = "#074584";
 
@@ -35,7 +48,7 @@ document.querySelector("#contact-form1").addEventListener("submit", function (ev
     let date = d;
     let time = t;
 
-    if (email != "" && name.length >= 2 && message != "" && mobile.length >= 10) {
+    if (email.match("@.") && name.length >= 2 && message != "" && mobile.length >= 10) {
         form_input_data = {
             "name": name,
             "email": email,
@@ -45,11 +58,13 @@ document.querySelector("#contact-form1").addEventListener("submit", function (ev
             "date": date,
             "time": time
         }
-        document.getElementById("form-submit-btn").disabled=true;
+        // document.getElementById("form-submit-btn").disabled=true;
         add_to_db();
     }
     else {
-        popup_alert("Phone number should be 10 digit.","red");
+        popup_alert("Phone number and Email is looks Invalid!","red");
+        document.getElementById("form-submit-btn").innerText = "Submit";
+        document.getElementById("form-submit-btn").style.backgroundColor = "#0880f7";
     }
 
 })
@@ -129,17 +144,23 @@ async function add_to_db() {
             body: JSON.stringify(form_input_data)
 
         })
-        let data = await res.json();
+        popup_alert("Hey! form submitted successfully. I wiil touch you soon.","green")
+        reset_function();
+        // let data = await res.json();
+        // console.log(data);
+        
         // console.log(data)
         // console.log(form_data)
         document.getElementById("form-submit-btn").innerText = "Submit";
         document.getElementById("form-submit-btn").style.backgroundColor = "#0880f7";
-        popup_alert("Hey! form submitted successfully. I wiil touch you soon.","green")
+        
         
     }
     catch (err) {
         console.log(err, "error from serer.");
         popup_alert("!Error in submitting,try again","red")
+        document.getElementById("form-submit-btn").innerText = "Submit";
+        document.getElementById("form-submit-btn").style.backgroundColor = "#0880f7";
     }
 }
 

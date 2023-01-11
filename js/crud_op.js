@@ -17,12 +17,15 @@ let E_api = "https://script.google.com/macros/s/AKfycbyis59RkA2eycKoCZKuzanTLiGz
 
 
 // Reset button worling or not..................
-document.getElementById("form-reset-btn").addEventListener("click",reset_function());
+document.querySelector("#form-reset-btn").addEventListener("click",function(){
+    reset_function();
+});
 function reset_function(){
-    let name = document.querySelector("#name-div").value="";
-    let email = document.querySelector("#email-div").value="";
-    let mobile = document.querySelector("#mobile-div").value="";
-    let message = document.querySelector("#message-div").value="";
+    document.querySelector("#name-div").value="";
+    document.querySelector("#email-div").value="";
+    document.querySelector("#mobile-div").value="";
+    document.querySelector("#message-div").value="";
+    document.querySelector("#file-upload").value="";
 }
 
 
@@ -30,7 +33,7 @@ function reset_function(){
 
 // Creating object of a contact form
 document.querySelector("#form-submit-btn").addEventListener("click", function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     document.getElementById("form-submit-btn").innerText = "Submitting......";
     document.getElementById("form-submit-btn").style.backgroundColor = "#074584";
 

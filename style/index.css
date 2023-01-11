@@ -177,6 +177,11 @@ body{
     
 }
 
+#navbar #menu-close-icon{
+    position: absolute;
+    visibility: hidden;
+}
+
 #menu-list-icon{
     visibility: hidden;
     

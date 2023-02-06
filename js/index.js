@@ -47,22 +47,22 @@ change_theme_btn.onclick=function(){
 
 
 
-// Designng Navbar Menu button for mobile view.
+// Designng nav-menu Menu button for mobile view.
 document.querySelector("#menu-list-icon").addEventListener("click",function(){
     let menu_btn=document.querySelector("#menu-list-icon");
     menu_btn.addEventListener("click",function(){
-    document.querySelector("#navbar>#menu-list>ul").style.right="40%";
-    document.querySelector("#navbar>#menu-list>ul").style.visibility="visible";
-    document.querySelector("#navbar #menu-close-icon i").style.visibility="visible";
-    document.querySelector("#navbar #menu-close-icon").style.right="38%";
+    document.querySelector("#nav-menu>#menu-list>ul").style.right="40%";
+    document.querySelector("#nav-menu>#menu-list>ul").style.visibility="visible";
+    document.querySelector("#nav-menu #menu-close-icon i").style.visibility="visible";
+    document.querySelector("#nav-menu #menu-close-icon").style.right="38%";
    })
     
 })
 
-document.querySelector("#navbar #menu-close-icon i").addEventListener("click",function(){
-    document.querySelector("#navbar>#menu-list>ul").style.right="100%";
-    document.querySelector("#navbar>#menu-list>ul").style.visibility="hidden";
-    document.querySelector("#navbar #menu-close-icon i").style.visibility="hidden";
+document.querySelector("#nav-menu #menu-close-icon i").addEventListener("click",function(){
+    document.querySelector("#nav-menu>#menu-list>ul").style.right="100%";
+    document.querySelector("#nav-menu>#menu-list>ul").style.visibility="hidden";
+    document.querySelector("#nav-menu #menu-close-icon i").style.visibility="hidden";
 })
 
 
@@ -107,7 +107,7 @@ document.querySelector("#social-icon-1>.mail-icon").addEventListener("click",fun
 
 // Link assigning to logo icon.
 document.getElementById("logo").addEventListener("click",function(){
-    location.href="../index.html";
+    location.href="../index";
 })
 
 

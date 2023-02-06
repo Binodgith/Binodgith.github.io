@@ -65,7 +65,7 @@ document.querySelector("#form-submit-btn").addEventListener("click", function (e
         add_to_db();
     }
     else {
-        popup_alert("Phone number and Email is looks Invalid!","red");
+        popup_alert("Input data  looks Invalid!","red");
         document.getElementById("form-submit-btn").innerText = "Submit";
         document.getElementById("form-submit-btn").style.backgroundColor = "#0880f7";
     }
@@ -176,7 +176,7 @@ function popup_alert(texts,bc){
     let id=setInterval(animation_fun,1000);
     let second=0;
     function animation_fun(){
-        if(second==4){
+        if(second==3){
             clearInterval(id);
             document.getElementById("alert-text").innerText="";
             document.getElementById("alert-section").style.visibility="hidden";

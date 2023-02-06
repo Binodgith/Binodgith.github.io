@@ -33,14 +33,14 @@ html{
     
 }
 
-/* ::-webkit-scrollbar{
+ ::-webkit-scrollbar{
     width:auto;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--secondary-color);
     border-radius: 15px;
-} */
+}
 
 
 
@@ -82,7 +82,7 @@ body{
 
 
 
-#navbar{
+#nav-menu{
     /* width: 100%; */
     display: flex;
     justify-content: space-between;
@@ -95,7 +95,7 @@ body{
     z-index: 100;
 }
 
-#navbar>#logo{
+#nav-menu>#logo{
     width: 60%;
     font-size: 3rem;
     margin: auto 30px;
@@ -105,16 +105,16 @@ body{
     width: 20%;
     
 }
-#navbar>#logo>.logo-name>p>span{
+#nav-menu>#logo>.logo-name>p>span{
     font-family: 'Lobster', cursive;
     color: var(--secondary-color);
     font-size: 4rem;
 
 }
-#navbar>#menu-list{
+#nav-menu>#menu-list{
     width: auto;
 }
-#navbar>#menu-list>ul{
+#nav-menu>#menu-list>ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -153,7 +153,7 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
-#navbar>#change-theme{
+#nav-menu>#change-theme{
     /* width: 5%; */
     font-size: 25px; ;
     color: var(--black-color);
@@ -168,13 +168,13 @@ body{
     border: 1px solid gray;
 }
 
-#navbar>#change-theme:hover{
+#nav-menu>#change-theme:hover{
     transform: rotateZ(-40deg);
     font-size: 27px;
     
 }
 
-#navbar #menu-close-icon i{
+#nav-menu #menu-close-icon i{
     /* position: absolute; */
     visibility: hidden;
 }
@@ -192,7 +192,7 @@ body{
 
 
 /* Main ssection degined................... */
-#main-section{
+#home{
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -209,7 +209,7 @@ body{
    
     
 }
-#main-section>#main-left{
+#home>#main-left{
     width: 40%;
     font-size: 35px;
     /* margin: auto; */
@@ -218,35 +218,35 @@ body{
 }
 
 
-#main-section>#main-left>.salute-sec img{
+#home>#main-left>.salute-sec img{
     width: 50px;
 }
 
-#main-section>#main-left>.name-sec span{
+#home>#main-left>.name-sec span{
     font-size:4rem;
     font-family: 'Lobster', cursive;
     /* font-weight:bold; */
     color: var(--secondary-color);
 }
 
-#main-section>#main-left>#subtitle-sec{
+#home>#main-left>#subtitle-sec{
     font-size: 30px;
     margin: 5px auto;
   
     font-family: Times New Roman,Times,serif;
 }
 
-#main-section>#main-left>#subtitle-sec .auto-type{
+#home>#main-left>#subtitle-sec .auto-type{
     font-size: 30px;
       font-family: apple-system,BlinkMacSystemFont,Segoe UI;
     font-weight: bold;
     color:red;
 }
 
-#main-section>#main-left>#social-icon-1{
+#home>#main-left>#social-icon-1{
     display: flex;
 }
-#main-section>#main-left>#social-icon-1 div i{
+#home>#main-left>#social-icon-1 div i{
     margin-right: 20px;
     font-size: 23px;
     padding: 12px;
@@ -256,7 +256,7 @@ body{
     transition: 0.3s;
 }
 
-#main-section>#main-left>#social-icon-1 div i:hover{
+#home>#main-left>#social-icon-1 div i:hover{
     color:var(--secondary-color);
     background-color:var(--primary-btn-color);
     border: 1px solid var(--black-color);
@@ -264,7 +264,7 @@ body{
 
 }
 
-#main-section>#main-left>.resume-btn-1 #primary-btn{
+#home>#main-left>.resume-btn-1 #primary-btn{
     font-size: 20px;
     margin: 30px auto;
     border-radius: 5px;
@@ -273,7 +273,7 @@ body{
 
 
 /*main  Right Section degining */
-#main-section>#main-right{
+#home>#main-right{
     width:40%;
     /* margin-left: 30px; */
     justify-content: center;
@@ -281,13 +281,13 @@ body{
 
 }
 
-#main-section>#main-right img{
+#home>#main-right img{
     width:35vw;
     margin-top: 40px;
     transition: 1s;
    
 }
-#main-section>#main-right img:hover{
+#home>#main-right img:hover{
     width: 37vw;
     margin-right: 10px;
 }
@@ -297,7 +297,7 @@ body{
 
 /* About Me secction design  */
 
-#About{
+#about{
     background-color:var(--ghost-white);
     color: var(--black-color);
     padding: 50px ;
@@ -313,28 +313,28 @@ body{
     color: var(--secondary-color);
 }
 
-#About>.content-section{
+#about>.content-section{
     display: flex;
     justify-content: space-between;
     margin: 30px auto ;
 }
 
-#About>.content-section>.about-img{
+#about>.content-section>.about-img{
     width: 50%;
     margin: auto;
 }
-#About>.content-section>.about-img img{
+#about>.content-section>.about-img img{
     width: 80%;
     margin: auto;
 }
 
-#About>.content-section>.about-content{
+#about>.content-section>.about-content{
     width: 50%;
     margin:auto ;
     
 }
 
-#About>.content-section>.about-content p{
+#about>.content-section>.about-content p{
     font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
     text-align: left;
     font-size: 18px;
@@ -346,7 +346,7 @@ body{
 
 
 /* icon rotating animation. */
-#About>.content-section>.about-content p i{
+#about>.content-section>.about-content p i{
     color: var(--secondary-color);
     font-size: 25px;
     animation: rotate 1.5s linear infinite ;
@@ -363,22 +363,22 @@ body{
 
 
 
-/* Project management section strarted designing..... */
-#project{
+/* projects management section strarted designing..... */
+#projects{
     width: 80%;
     margin:30px auto;
     color: var(--black-color);
     font-family:ubuntu, cera-round-pro,Helvetica;
 }
 
-#project>#project-items{
+#projects>#project-items{
     display: grid;
     grid-template-columns:repeat(2,1fr);
     gap: 30px;
     margin: 60px auto;
 }
 
-#project>#project-items>.prj-box{
+#projects>#project-items>.project-card{
     margin: 10px;
     background-color:var(--ghost-white);
     padding: 20px;
@@ -387,18 +387,18 @@ body{
     transition: 0.7s;
 }
 
-#project>#project-items>.prj-box:hover{
-    /* width: 100%; */
-    /* box-shadow: 1px 1px 10px 1px var(--fade-black-color); */
+#projects>#project-items>.project-card:hover{
+     /* width: 100%;  */
+     box-shadow: 1px 1px 10px 1px var(--fade-black-color); 
     box-shadow: -5px 15px 0px  var(--fade-black-color);
-    transform: rotateX(0deg);
+    transform: rotateX(25deg);
     /* transform: rotateY(0deg); */
 
 }
 
 
 /* Project image designning.... */
-#project>#project-items>.prj-box>.prj-img img{
+#projects>#project-items>.project-card>.prj-img img{
     width: 100%;
     border-radius: 10px;
     box-shadow: 1px -2px 5px 3px var(--gray-color);
@@ -407,7 +407,7 @@ body{
 
 
 /* Project title designing ...... */
-#project>#project-items>.prj-box .prj-title{
+#projects>#project-items>.project-card .project-title{
     font-size: 25px; 
    margin: 15px auto;
     text-align: center;
@@ -417,20 +417,20 @@ body{
 }
 
 
-#project>#project-items>.prj-box .prj-title a{
+#projects>#project-items>.project-card .project-title a{
     text-decoration: none;
     color: var(--secondary-color);
     text-shadow: 1px 1px 0px var(--gray-color);
 }
 
-#project>#project-items>.prj-box .prj-title a:hover{
+#projects>#project-items>.project-card .project-title a:hover{
     color: var(--black-color);
 }
 
 
 
 /* Project Description designing..... */
-#project>#project-items>.prj-box .prj-decription p{
+#projects>#project-items>.project-card .project-description p{
     text-align: left;
     font-size: 15px;
     color: var(--fade-black-color);
@@ -439,7 +439,7 @@ body{
 
 
 /* Project Tech stack aliignment..... */
-#project>#project-items>.prj-box .prj-techstack{
+#projects>#project-items>.project-card .project-tech-stack{
     font-size: 18px;
     align-items: center;
     justify-content: center;
@@ -450,7 +450,7 @@ body{
     
 }
 
-#project>#project-items>.prj-box .prj-techstack img{
+#projects>#project-items>.project-card .project-tech-stack img{
     width: 7%;
     margin: 5px;
     align-items: center;
@@ -459,21 +459,21 @@ body{
 
 
 /* Project External details section.... */
-#project>#project-items>.prj-box>.prj-type{
+#projects>#project-items>.project-card>.prj-type{
     color: var(--secondary-color);
     font-size: 15px;
     margin: 7px auto;
     display: flex;
     justify-content: space-around;
 }
-#project>#project-items>.prj-box>.prj-type span{
+#projects>#project-items>.project-card>.prj-type span{
     color: var(--black-color);
 }
 
 
 
 /* Set hiperLink to correspoding project...  */
-#project>#project-items>.prj-box>.prj-links{
+#projects>#project-items>.project-card>.prj-links{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -482,7 +482,7 @@ body{
     color: var(--black-color);
 }
 
-#project>#project-items>.prj-box>.prj-links a{
+#projects>#project-items>.project-card>.prj-links a{
     color: var(--black-color);
     text-decoration: none;
     font-size: 18px;
@@ -490,7 +490,7 @@ body{
     padding: 9px;
     border-radius: 10px;
 }
-#project>#project-items>.prj-box>.prj-links a:hover{
+#projects>#project-items>.project-card>.prj-links a:hover{
     background-color:var(--fade-black-color);
     color: var(--primary-color);
 }
@@ -500,7 +500,7 @@ body{
 
 /* Technical skills section designig... */
 
-#tech-skill{
+#skills{
     background-color:var(--ghost-white);
     color: var(--black-color);
     margin: auto;
@@ -508,7 +508,7 @@ body{
 
 }
 
-#tech-skill>#techskill-content{
+#skills>#techskill-content{
     width: 80%;
     margin:50px auto;
     display: grid;
@@ -520,7 +520,7 @@ body{
     flex-wrap: wrap; */
 }
 
-#tech-skill>#techskill-content .skill-box{
+#skills>#techskill-content .skills-card{
     background-color:var(--primary-color);
     text-align: center;
     padding: 20px;
@@ -533,13 +533,13 @@ body{
 }
 
 
-/* #tech-skill>#techskill-content .skill-box:hover{
+/* #skills>#techskill-content .skills-card:hover{
     transform: rotateZ(360deg);
     box-shadow: 0px 0px 15px 5px var(--secondary-color);
 
 } */
 
-#tech-skill>#techskill-content .skill-box img{
+#skills>#techskill-content .skills-card img{
     width: 100%;
     margin: 10px auto;
 }
@@ -601,25 +601,26 @@ body{
     width: 100%;
     color: var(--black-color);
     box-sizing: border-box;
+    box-shadow: 2px 2px 15px 5px var(--gray-color);
 }
 
-#github-view>#github-streak-stat{
+#github-view>#github-stats-card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
 }
 
-#github-view>#github-streak-stat img{
+#github-view>#github-stats-card img{
     width: 100%;
     
 }
 
-#github-view>#github-lang {
+#github-view>#github-top-langs {
     width: 50%;
     margin:30px auto;
 }
 
-#github-view>#github-lang img{
+#github-view>#github-top-langs img{
     width: 100%;
     
 }
@@ -692,21 +693,21 @@ body{
 }
 
 #contact #contact-left{
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
 
 #contact #contact-left img{
-    width: 95%;
+    width: 100%;
 }
 
 
 
 /* contact right section alignment..... */
 #contact #contact-right{
-    /* width: 95%; */
-    /* margin: auto; */
+    width: 40%;
+    margin: auto;
 }
 #social-icons2{
     display: grid;
@@ -731,10 +732,10 @@ body{
 
 #social-icons2 a{
     text-decoration: none;
-    color: var(--secondary-color);
+    color: white;
 
 }
-/* 
+ 
 #social-icons2 .linkedin-icon2{
     background-color: #0a66c2;
     
@@ -754,7 +755,7 @@ body{
 #social-icons2 .call-icon2{
     background-color: #57bd50;
 
-} */
+} 
 
 
 
@@ -762,7 +763,7 @@ body{
 /* or tag designed.... */
 
 #contact #contact-right{
-    /* width:90%; */
+    width:50%;
 }
 
 
@@ -779,7 +780,7 @@ body{
 
 /* contact form Designing........ */
 #contact #contact-right #contact-form{
-    width: 40%;
+    width: 60%;
     margin: auto;
 }   
 

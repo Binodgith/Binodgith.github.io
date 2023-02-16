@@ -22,15 +22,15 @@
 
 /* For mediup Screen size....... */
 @media all and (min-width:650px) and (max-width:1100px){
-    #navbar>#logo{
+    #nav-menu>#logo{
         font-size: 2rem;
         margin: auto;
     }
-    #navbar>#logo>.logo-name>p>span{
+    #nav-menu>#logo>.logo-name>p>span{
         font-size: 3rem;
     }
 
-    #navbar>#change-theme{
+    #nav-menu>#change-theme{
         margin: auto;
     }
     #menu-list>ul>li a{
@@ -46,29 +46,29 @@
 
 
 /* main section */
-    #main-section{
+    #home{
         width: 100%;
         
     }
-    #main-section>#main-left{
+    #home>#main-left{
         font-size: 1.2rem;
         
     }
-    #main-section>#main-left>.name-sec span{
+    #home>#main-left>.name-sec span{
         font-size: 2rem;
     }
-    #main-section>#main-left>#subtitle-sec{
+    #home>#main-left>#subtitle-sec{
         font-size: 1.2rem;
     }
-    #main-section>#main-left>#subtitle-sec .auto-type{
+    #home>#main-left>#subtitle-sec .auto-type{
         font-size: 1.3rem;
     }
 
-    #main-section>#main-left>#social-icon-1 div i{
+    #home>#main-left>#social-icon-1 div i{
         font-size: 18px;
         padding: 9px;
     }
-    #main-section>#main-left>.resume-btn-1 #primary-btn{
+    #home>#main-left>.resume-btn-1 #primary-btn{
         font-size: 15px;
         margin: 30px auto;
         border-radius: 5px;
@@ -81,17 +81,17 @@
     }
 
     /* About Section...... */
-    #About>.content-section>.about-content p{
+    #about>.content-section>.about-content p{
         font-size: 17px;
     }
 
-    #About>.content-section{
+    #about>.content-section{
         display: block;
     }
-    #About>.content-section>.about-img{
+    #about>.content-section>.about-img{
         width: 50%;
     }
-    #About>.content-section>.about-content{
+    #about>.content-section>.about-content{
         width: 90%;
     }
 
@@ -108,14 +108,14 @@
 
 
     /* Project section......... */
-    #project>#project-items>.prj-box .prj-title{
+    #projects>#project-items>.project-card .project-title{
         font-size: 18px;
     }
 
-    #project>#project-items>.prj-box .prj-decription p{
+    #projects>#project-items>.project-card .project-description p{
         font-size: 15px;
     }
-    #project>#project-items>.prj-box>.prj-links{
+    #projects>#project-items>.project-card>.prj-links{
         font-size: 1.5rem;
     }
 
@@ -123,13 +123,13 @@
 
 /* Tech-skill section */
     
-    #tech-skill>#techskill-content{
+    #skills>#techskill-content{
         width: 90%;
         grid-template-columns:repeat(5,1fr);
         gap: 1rem;
 
     }
-    #tech-skill>#techskill-content .skill-box{
+    #skills>#techskill-content .skills-card{
         font-size: 16px;
     }
 
@@ -202,18 +202,18 @@
 
 
 @media all and (min-width:250px) and (max-width:649px){
-    #navbar>#logo{
+    #nav-menu>#logo{
         font-size: 1.5rem;
         margin: auto;
     }
-    #navbar>#logo>.logo-name>p>span{
+    #nav-menu>#logo>.logo-name>p>span{
         font-size: 2rem;
     }
 
-    #navbar>#change-theme{
+    #nav-menu>#change-theme{
         margin: auto;
     }
-    #navbar>#menu-list>ul{
+    #nav-menu>#menu-list>ul{
         width: 60%;
         position: fixed;
         right: 100%;
@@ -227,14 +227,14 @@
         visibility: hidden;
     }
 
-    #navbar>#menu-list>ul>li{
+    #nav-menu>#menu-list>ul>li{
         color:var(--black-color);
         font-size: 10px;
         margin:5px 0px;
         background-color:var(--primary-color);
         padding: 10px;
     }
-    #navbar #menu-close-icon i{
+    #nav-menu #menu-close-icon i{
         color: var(--primary-color);
         position: absolute;
         top: 5px;
@@ -262,49 +262,49 @@
 
 
 /* main section */
-    #main-section{
+    #home{
         width: 100%;
         display: block;
         position: relative;
         
     }
-    #main-section>#main-left{
+    #home>#main-left{
         width: 80%;
         margin: 50px auto;
         font-size: 0.9rem;
         
     }
-    #main-section>#main-left>.salute-sec img{
+    #home>#main-left>.salute-sec img{
         width: 30px;
     }
-    #main-section>#main-left>.name-sec span{
+    #home>#main-left>.name-sec span{
         font-size: 1.5rem;
     }
-    #main-section>#main-left>#subtitle-sec{
+    #home>#main-left>#subtitle-sec{
         font-size: 1rem;
     }
-    #main-section>#main-left>#subtitle-sec .auto-type{
+    #home>#main-left>#subtitle-sec .auto-type{
         font-size: 1.1rem;
     }
 
-    #main-section>#main-left>#social-icon-1 div i{
+    #home>#main-left>#social-icon-1 div i{
         font-size: 12px;
         padding: 7px;
     }
-    #main-section>#main-left>.resume-btn-1 #primary-btn{
+    #home>#main-left>.resume-btn-1 #primary-btn{
         font-size: 10px;
         margin: 10px auto;
     }
     
 
-    #main-section>#main-right{
+    #home>#main-right{
         /* width: 20%; */
         position: absolute;
         top:1%;
         left: 80%;
         transform: translateX(-50%);
     }
-    #main-section>#main-right img{
+    #home>#main-right img{
         width: 50%;
         margin: auto;
     }
@@ -318,24 +318,24 @@
 
 
     /* About Section...... */
-    #About{
+    #about{
         padding: 10px;
     }
 
-    #About>.content-section>.about-content p{
+    #about>.content-section>.about-content p{
         font-size: 12px;
     }
 
-    #About>.content-section{
+    #about>.content-section{
         display: block;
     }
-    #About>.content-section>.about-img{
+    #about>.content-section>.about-img{
         width: 30%;
     }
-    #About>.content-section>.about-content{
+    #about>.content-section>.about-content{
         width: 90%;
     }
-    #About>.content-section>.about-content p i{
+    #about>.content-section>.about-content p i{
         font-size: 15px;
     }
 
@@ -352,39 +352,39 @@
 
 
     /* Project section......... */
-    #project>#project-items{
+    #projects>#project-items{
         grid-template-columns:repeat(1,1fr);
     }
 
-    #project>#project-items>.prj-box .prj-title{
+    #projects>#project-items>.project-card .project-title{
         font-size: 13px;
     }
 
-    #project>#project-items>.prj-box .prj-decription p{
+    #projects>#project-items>.project-card .project-description p{
         font-size: 10px;
     }
-    #project>#project-items>.prj-box>.prj-links{
+    #projects>#project-items>.project-card>.prj-links{
         font-size: 1.1rem;
     }
-    #project>#project-items>.prj-box>.prj-type{
+    #projects>#project-items>.project-card>.prj-type{
         font-size: 11px;
     }
 
 
 /* Tech-skill section */
     
-    #tech-skill>#techskill-content{
+    #skills>#techskill-content{
         width: 90%;
         grid-template-columns:repeat(3,1fr);
         gap: 1rem;
 
     }
-    #tech-skill>#techskill-content .skill-box{
+    #skills>#techskill-content .skills-card{
         font-size: 0.5rem;
         padding: 10px;
         
     }
-    #tech-skill>#techskill-content .skill-box img{
+    #skills>#techskill-content .skills-card img{
         width: 50%;
     }
 
@@ -400,6 +400,10 @@
     }
     #github-view>#github-cal{
         margin: 10px auto;
+    }
+    #github-view>#github-stats-card{
+        grid-template-columns: repeat(1,1fr);
+
     }
 
     #github-view>#github-streak-stat{
@@ -443,6 +447,8 @@
         font-size: 10px;
         gap: 12px;
         width: 90%;
+        grid-template-columns: repeat(2,1fr);
+
     }
 
     #contact #contact-right #contact-form{

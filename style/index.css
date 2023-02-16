@@ -608,6 +608,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
+    
 }
 
 #github-view>#github-stats-card img{
@@ -615,19 +616,22 @@ body{
     
 }
 
-#github-view>#github-top-langs {
+/* #github-view>#github-top-langs {
     width: 50%;
-    margin:30px auto;
-}
+    margin:auto;
+} */
 
 #github-view>#github-top-langs img{
     width: 100%;
+    
     
 }
 
 #github-view .github-property{
     box-shadow: 2px 2px 15px 5px var(--gray-color);
     transition: 0.5s;
+    
+    
 }
 
 #github-view .github-property:hover{
@@ -706,7 +710,7 @@ body{
 
 /* contact right section alignment..... */
 #contact #contact-right{
-    width: 40%;
+    /* width: 40%; */
     margin: auto;
 }
 #social-icons2{
@@ -763,7 +767,8 @@ body{
 /* or tag designed.... */
 
 #contact #contact-right{
-    width:50%;
+    /* width:50%; */
+    /* margin: auto; */
 }
 
 

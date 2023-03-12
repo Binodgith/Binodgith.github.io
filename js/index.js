@@ -1,3 +1,13 @@
+// -----------Portfolio discontinued--------------
+
+document.querySelector("body").innerHTML="";
+document.querySelector("body").innerHTML="For now this site cannot be accessible by USER............";
+
+
+
+
+
+
 // Pre-Loader allignment..........
 let pre_loader=document.getElementById("intro_animation");
 

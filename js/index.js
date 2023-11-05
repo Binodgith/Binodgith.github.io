@@ -1,7 +1,7 @@
 // -----------Portfolio discontinued--------------
 
-document.querySelector("body").innerHTML="";
-document.querySelector("body").innerHTML="For now this site cannot be accessible by USER............";
+// document.querySelector("body").innerHTML="";
+// document.querySelector("body").innerHTML="For now this site cannot be accessible by USER............";
 
 
 

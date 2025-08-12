@@ -7,7 +7,9 @@
 
 
 
-
+window.addEventListener("load", function(){
+    loadfun();
+});
 // Pre-Loader allignment..........
 let pre_loader=document.getElementById("intro_animation");
 

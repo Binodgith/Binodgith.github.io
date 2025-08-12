@@ -32,13 +32,13 @@ change_theme_btn.onclick=function(){
         change_theme_btn.innerHTML='<i class="fa-solid fa-sun"></i>';
 
         //change the github streak to dark.
-        document.querySelector("#github-streak-stat>#github-streak img").src="https://github-readme-streak-stats.herokuapp.com?user=binodgith&theme=tokyonight&border_radius=8&color=#43BEE5"
+        document.querySelector("#github-streak-stat>#github-streak img").src="https://github-readme-streak-stats.herokuapp.com?user=binodgith&theme=dark&border_radius=8&color=#43BEE5"
 
         //change the github stat to dark
-        document.querySelector("#github-streak-stat>#github-stat img").src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=binodgith&show_icons=true&theme=tokyonight&border_radius=8"
+        document.querySelector("#github-streak-stat>#github-stat img").src="https://github-readme-stats.vercel.app/api?username=Binodgith&show_icons=true&theme=radical"
 
         // change the github langusge to dark
-        document.querySelector("#github-lang img").src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=tusharkadam7671&show_icons=true&theme=tokyonight&locale=en&layout=compact"
+        document.querySelector("#github-lang img").src="https://github-readme-stats.vercel.app/api/top-langs/?username=Binodgith&theme=radical&langs_count=8"
 
     }
     else{
@@ -46,13 +46,13 @@ change_theme_btn.onclick=function(){
 
 
         //change the github streak to dark.
-        document.querySelector("#github-streak-stat>#github-streak img").src="https://github-readme-streak-stats.herokuapp.com?user=binodgith&theme=default&border_radius=8&color=#43BEE5"
+        document.querySelector("#github-streak-stat>#github-streak img").src="https://github-readme-streak-stats.herokuapp.com?user=binodgith&theme=light&border_radius=8&color=#43BEE5"
 
         //change the github stat to dark
-        document.querySelector("#github-streak-stat>#github-stat img").src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=binodgith&show_icons=true&theme=light&border_radius=8"
+        document.querySelector("#github-streak-stat>#github-stat img").src="https://github-readme-stats.vercel.app/api?username=Binodgith&show_icons=true&theme=radical"
 
         // change the github langusge to dark
-        document.querySelector("#github-lang img").src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=tusharkadam7671&show_icons=true&locale=en&layout=compact"
+        document.querySelector("#github-lang img").src="https://github-readme-stats.vercel.app/api/top-langs/?username=Binodgith&theme=light&langs_count=8"
     }
 }
 
@@ -89,16 +89,16 @@ document.querySelector("#nav-menu #menu-close-icon i").addEventListener("click",
 
 // Link to every resume button.
 document.querySelector(".resume-btn1").addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F/view?usp=share_link","_blank");
-    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
+    window.open("https://drive.google.com/file/d/1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p/view?usp=share_link","_blank");
+    location.href="https://drive.google.com/uc?export=download&id=1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p";
 });
 document.querySelector(".resume-btn2").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
-    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
+    location.href="https://drive.google.com/uc?export=download&id=1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p";
 });
 document.querySelector(".resume-btn3").addEventListener("click",function(){
     window.open("docs/DBinod_Resume.pdf","_blank");
-    location.href="https://drive.google.com/uc?export=download&id=1MItWlk3VRDlb5BHgvHsP3tV8lwa4hT5F";
+    location.href="https://drive.google.com/uc?export=download&id=1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p";
 });
 
 

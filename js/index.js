@@ -89,7 +89,7 @@ document.querySelector("#nav-menu #menu-close-icon i").addEventListener("click",
 
 // Link to every resume button.
 document.querySelector(".resume-btn1").addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p/view?usp=share_link","_blank");
+    window.open("docs/DBinod_Resume.pdf","_blank");
     location.href="https://drive.google.com/uc?export=download&id=1IITjhuoWQ3gGhwUG0aXsOkwK-FPJLY5p";
 });
 document.querySelector(".resume-btn2").addEventListener("click",function(){
